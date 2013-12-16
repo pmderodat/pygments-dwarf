@@ -21,6 +21,7 @@ class DWARFLexer(RegexLexer):
             # Common syntax elements: numbers, ...
             (r'0x[0-9a-fA-F]+', Number),
             (r'\d+', Number),
+            (r'"[^"]*"', String),
 
             (r'.', Text),
         ],
